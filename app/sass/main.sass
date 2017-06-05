@@ -1,0 +1,277 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+	overflow-x: hidden
+	opacity: 1
+
+h1, h2, h3, h4, h5
+	text-transform: uppercase
+	margin: 0
+	padding: 0
+	color: #000
+
+h1
+	font-weight: 700
+	line-height: 45px
+
+h2
+	font-size: 24px
+	font-weight: 400
+	letter-spacing: inherit
+	line-height: 30px
+
+h3
+	font-size: 14px
+	letter-spacing: inherit
+	font-weight: 700
+
+h4
+	letter-spacing: 0px
+	font-weight: 400
+	text-transform: none
+	font-size: 16px
+	line-height: 26px
+
+h5
+	letter-spacing: 2px
+	font-weight: 600
+	font-size: 11px
+
+h6
+	font-family: 'Open Sans', sans-serif
+	letter-spacing: 1px
+	font-size: 13px
+	font-weight: 400
+	line-height: 20px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.navbar
+	position: fixed;
+	top: 0px;
+	background-color: transparent
+	border-color: transparent
+	transition: background-color .5s ease
+	img
+		width: 200px
+		transition: width 250ms ease-in-out
+	li
+		margin: 10px 20px;
+
+.navbar-default .navbar-nav>li>a
+	color: #fff
+	padding: 10px 0
+	&::after
+		display:  block
+		content: ''
+		border-bottom: solid 2px #fff
+		transform: scaleX(0)
+		transition: transform 250ms ease-in-out
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover
+	color: #fff
+	&::after
+		transform: scaleX(1)
+
+.panel-group
+	margin-bottom: 0
+
+.navbar.bg-nav
+	border-bottom: 1px solid rgba(0,0,0,0.1)
+	background-color: rgba(100, 101, 95, 0.73)
+	transition: background-color .5s ease
+	img
+		width: 100px
+
+// section
+// 	padding: 120px 0
+
+.owl
+	&-bg
+		position: relative
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		overflow: hidden
+		display: block
+		width: 100%
+	&-dots
+		bottom: 30px
+		display: block
+		left: 0
+		position: absolute
+		text-align: center
+		width: 100%
+		z-index: 100
+		.active
+			span
+				background-image: url('../img/icon/car-yellow-with-tires.png') !important
+				background-size: 98% !important
+				background-repeat: no-repeat !important
+				width: 77px!important
+				height: 36px!important
+				margin: 0 -2px !important
+	&-dot
+		span
+			border: none
+			margin: 0 !important
+			transform: none !important
+			background: none !important
+			background-image: url('../img/icon/tires2.png') !important
+			background-size: contain !important
+			background-repeat: no-repeat !important
+			background-position: center !important
+			width: 52px !important
+			border-radius: inherit !important
+			height: 37px !important
+			margin-right: -2px !important
+		
+
+.cover-bg
+    background: #252525;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+.slider
+	&-text
+		&-wrap
+			position: absolute
+			width: 100%
+			height: 100%
+			text-align: center
+			right: 0
+			left: 0
+			z-index: 1
+		&-position
+			display: table
+			height: 100%
+			width: 100%
+		&-middle
+			display: table-cell
+			vertical-align: middle
+		&-title
+			font-size: 110px
+			font-weight: 700
+			text-transform: uppercase
+			line-height: 1
+			color: #fff
+		&-small
+			display: block
+			letter-spacing: 10px
+			font-size: 11px
+			line-height: 15px
+			color: #fff
+
+.ourTeam
+	animation-duration: 3s
+	animation-delay: .7s
+	animation-iteration-count: 1
+	&-title
+		text-transform: uppercase
+		font-weight: 700
+		font-size: 20px
+		letter-spacing: 2px
+	&-text
+		margin: 5% auto
+		float: none
+		h4
+			color: $text-color
+	&-person
+		overflow: hidden
+		max-height: 695px
+		img
+			opacity: 1
+			transition: all .3s ease
+			max-width: 100%
+			height: auto
+		&:hover
+			img
+				opacity: 0.5
+				transition: all .3s ease
+				transform: scale(1.1,1.1)
+			.ourTeam-details
+				bottom: 110px
+				transition: all .3s ease
+				border-top: 1px solid #e5e5e5
+	&-details
+		position: relative
+		background-color: #fff
+		padding: 32px 25px 120px
+		bottom: 0
+		transition: all .3s ease
+		border-top: 1px solid #e5e5e5
+	&-name
+		font-size: 11px
+		letter-spacing: 2px
+		text-transform: uppercase
+		display: block
+		font-weight: 600
+		color: #000
+	&-position
+		font-size: 11px
+		text-transform: uppercase
+		font-weight: 400
+		letter-spacing: 1px
+
+.borderline-yellow
+	height: 2px
+	margin: 0 auto
+	width: 30px
+	margin: 7% auto
+	background: #e6af2a 
+
+
+
+
+// .key-person .key-person-img img { opacity:1;  transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; }
+// .key-person:hover .key-person-img img { opacity:0.5; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; -ms-transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1);  transform: scale(1.1,1.1);}
+// .key-person:hover .key-person-details { bottom:110px; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; border-top:1px solid #e5e5e5}
+// .key-person-details{ position:relative; background-color:#fff; padding: 32px 25px 120px; bottom:0; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease; border-top:1px solid #e5e5e5}
+// .key-person i { font-size:20px; margin:15px 15px 25px}
+// .key-person a i { color:#000; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease;}
+// .key-person a:hover i { color:#858585; transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease;}
+// .key-person .person-name { font-size:11px; letter-spacing: 2px; text-transform:uppercase; display:block; font-weight:600}
+// .key-person .person-post { font-size:11px; text-transform:uppercase; font-weight:400; letter-spacing: 1px}
+
+@import "media"
