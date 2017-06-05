@@ -37,6 +37,12 @@ body
 	overflow-x: hidden
 	opacity: 1
 
+section:first-of-type
+	padding: 0
+
+section
+	padding: 120px 0	
+
 h1, h2, h3, h4, h5
 	text-transform: uppercase
 	margin: 0
@@ -157,11 +163,11 @@ h6
 			background-size: contain !important
 			background-repeat: no-repeat !important
 			background-position: center !important
-			width: 52px !important
+			width: 52px !important //44
 			border-radius: inherit !important
 			height: 37px !important
 			margin-right: -2px !important
-		
+
 
 .cover-bg
     background: #252525;
@@ -219,7 +225,7 @@ h6
 			color: $text-color
 	&-person
 		overflow: hidden
-		max-height: 695px
+		max-height: 465px
 		img
 			opacity: 1
 			transition: all .3s ease
@@ -253,6 +259,8 @@ h6
 		text-transform: uppercase
 		font-weight: 400
 		letter-spacing: 1px
+	&-desc
+		font-size: 13px
 
 .borderline-yellow
 	height: 2px

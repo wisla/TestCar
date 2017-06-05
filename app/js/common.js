@@ -81,4 +81,34 @@ $(function() {
     wow.init();
     //WOW Animation  - END CODE
 
+ 	// Show Animated Counters
+    animatecounters();
+    
+
+    //counter number reset while scrolling
+    $('.timer').appear();
+    $(document.body).on('appear', '.timer', function (e) {
+        // this code is executed for each appeared element
+        if (!$(this).hasClass('appear')) {
+            animatecounters();
+            $(this).addClass('appear');
+        }
+    });
+
+	//Counter Number - START CODE
+	function animatecounters() {
+	    
+	    $('.timer').each(count);
+	        function count(options) {
+	            var $this = $(this);
+	            options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	            $this.countTo(options);
+	        }
+
+    }
+	//Counter Number - END CODE 
+
 });
+
+
+
