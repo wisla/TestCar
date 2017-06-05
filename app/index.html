@@ -45,14 +45,16 @@
                 	</button>
                 </div>
                 <div class="col-md-8">
-                	<ul class="nav navbar-nav navbar-right panel-group">
-                		<li><a href="#">About US</a></li>
-                		<li><a href="#">How We Work</a></li>
-                		<li><a href="#">We done</a></li>
-                		<li><a href="#">Pricing</a></li>
-                		<li><a href="#">Blog</a></li>
-                		<li><a href="#">Contact</a></li>
-                	</ul>
+                	<div class="navbar-collapse collapse">	
+	                	<ul class="nav navbar-nav navbar-right panel-group">
+	                		<li><a href="#">About US</a></li>
+	                		<li><a href="#">How We Work</a></li>
+	                		<li><a href="#">We done</a></li>
+	                		<li><a href="#">Pricing</a></li>
+	                		<li><a href="#">Blog</a></li>
+	                		<li><a href="#">Contact</a></li>
+	                	</ul>
+                	</div>
                 </div>	
 			</div>
 		</div>
@@ -114,7 +116,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3 col-xs-3 bottom-margin text-center wow fadeInUp animated" data-wow-duration="900ms">
+				<div class="col-md-3 col-sm-3 col-xs-12 bottom-margin text-center wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.1s">
 					<div class="ourTeam-person">
                         <div class="ourTeam-img"><img src="img/our-team.png" alt=""></div>
                         <div class="ourTeam-details">
@@ -130,7 +132,7 @@
                         </div>
                     </div>
 				</div>
-				<div class="col-md-3 col-xs-3 bottom-margin text-center wow fadeInUp animated" data-wow-duration="1200ms">
+				<div class="col-md-3 col-xs-12 bottom-margin text-center wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.3s">
 					<div class="ourTeam-person">
                         <div class="ourTeam-img"><img src="img/our-team2.png" alt=""></div>
                         <div class="ourTeam-details">
@@ -146,7 +148,7 @@
                         </div>
                     </div>
 				</div>
-				<div class="col-md-3 col-xs-3 bottom-margin text-center wow fadeInUp animated" data-wow-duration="1500ms">
+				<div class="col-md-3 col-xs-12 bottom-margin text-center wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.5s">
 					<div class="ourTeam-person">
                         <div class="ourTeam-img"><img src="img/our-team3.png" alt=""></div>
                         <div class="ourTeam-details">
@@ -162,7 +164,7 @@
                         </div>
                     </div>
 				</div>
-				<div class="col-md-3 col-xs-3 bottom-margin text-center wow fadeInUp animated" data-wow-duration="1800ms">
+				<div class="col-md-3 col-xs-12 bottom-margin text-center wow fadeInUp animated" data-wow-duration="1s" data-wow-delay="0.7s">
 					<div class="ourTeam-person">
                         <div class="ourTeam-img"><img src="img/our-team4.png" alt=""></div>
                         <div class="ourTeam-details">
@@ -185,11 +187,6 @@
 	<section>
 		<div class="container">
 			<div class="row">
-				<!-- <div class="col-md-3 col-sm-6 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten" data-wow-duration="300ms">
-                    <i class="icon-heart medium-icon"></i>
-                    <span class="timer counter-number main-font font-weight-600" data-to="516" data-speed="7000"></span>
-                    <span class="counter-title light-gray-text">Pizzas Ordered</span>
-                </div> -->
 				<div class="col-md-3 text-center">
 					<div class="item wow fadeInUpBig">
 		                <i class="fa fa-briefcase"></i>
@@ -225,10 +222,102 @@
 	<section id="Pricing" class="pricing">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-6"></div>
-				<div class="col-lg-3 col-md-6"></div>
-				<div class="col-lg-3 col-md-6"></div>
-				<div class="col-lg-3 col-md-6"></div>
+				<div class="col-md-12 text-center">
+					<h3 class="ourTeam-title">Prices</h3>
+				</div>
+				<div class="col-md-5 col-sm-10 text-center ourTeam-text wow fadeIn">
+					<h4>Choose the most suitable offer</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="pricing-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s">
+						<h3>Basic</h3>
+						<div class="pricing-features">
+		                <ul>
+		                  <li>Fully Responsive</li>
+		                  <li>Clean Design</li>
+		                  <li>Tons of Features</li>
+		                </ul>
+		              </div>
+		              <div class="pricing-price">
+		                <span class="pricing-currency">$</span>
+		                <span>72</span>
+		              </div>
+		              <div class="pricing-button">
+		                <a href="#" class="btn btn-md btn-white btn-icon">
+		                  <span>Order Now</span>
+		                  <i class="fa fa-angle-right"></i>
+		                </a>
+		              </div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 text-center">
+					<div class="pricing-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+						<h3>Basic</h3>
+						<div class="pricing-features">
+		                <ul>
+		                  <li>Fully Responsive</li>
+		                  <li>Clean Design</li>
+		                  <li>Tons of Features</li>
+		                </ul>
+		              </div>
+		              <div class="pricing-price">
+		                <span class="pricing-currency">$</span>
+		                <span>72</span>
+		              </div>
+		              <div class="pricing-button">
+		                <a href="#" class="btn btn-md btn-white btn-icon">
+		                  <span>Order Now</span>
+		                  <i class="fa fa-angle-right"></i>
+		                </a>
+		              </div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="pricing-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+						<h3>Basic</h3>
+						<div class="pricing-features">
+		                <ul>
+		                  <li>Fully Responsive</li>
+		                  <li>Clean Design</li>
+		                  <li>Tons of Features</li>
+		                </ul>
+		              </div>
+		              <div class="pricing-price">
+		                <span class="pricing-currency">$</span>
+		                <span>72</span>
+		              </div>
+		              <div class="pricing-button">
+		                <a href="#" class="btn btn-md btn-white btn-icon">
+		                  <span>Order Now</span>
+		                  <i class="fa fa-angle-right"></i>
+		                </a>
+		              </div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="pricing-item wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+						<h3>Basic</h3>
+						<div class="pricing-features">
+		                <ul>
+		                  <li>Fully Responsive</li>
+		                  <li>Clean Design</li>
+		                  <li>Tons of Features</li>
+		                </ul>
+		              </div>
+		              <div class="pricing-price">
+		                <span class="pricing-currency">$</span>
+		                <span>72</span>
+		              </div>
+		              <div class="pricing-button">
+		                <a href="#" class="btn btn-md btn-white btn-icon">
+		                  <span>Order Now</span>
+		                  <i class="fa fa-angle-right"></i>
+		                </a>
+		              </div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
