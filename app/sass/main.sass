@@ -135,6 +135,7 @@ h6
 .navbar-toggle
 	position: absolute
 	top: -65px
+	right: 0
 
 .owl
 	&-bg
@@ -176,6 +177,12 @@ h6
 			height: 37px !important
 			margin-right: -2px !important
 
+.underline
+	height: 20px
+	background-size: 13%
+	background-repeat: no-repeat
+	background-position: center
+	margin: 5px 0 15px 0
 
 .cover-bg
     background: #252525;
@@ -217,20 +224,22 @@ h6
 			line-height: 15px
 			color: #fff
 
-.ourTeam
-	animation-duration: 3s
-	animation-delay: .7s
-	animation-iteration-count: 1
-	&-title
-		text-transform: uppercase
-		font-weight: 700
-		font-size: 20px
-		letter-spacing: 2px
+.title
+	text-transform: uppercase
+	font-weight: 100
+	font-size: 20px
+	letter-spacing: 2px
 	&-text
 		margin: 5% auto
 		float: none
 		h4
 			color: $text-color
+
+
+.ourTeam
+	animation-duration: 3s
+	animation-delay: .7s
+	animation-iteration-count: 1
 	&-person
 		overflow: hidden
 		max-height: 465px
@@ -277,6 +286,40 @@ h6
 	margin: 7% auto
 	background: #e6af2a 
 
+.backgroundFix
+	position: relative
+	background-size: cover //!important
+	overflow: hidden
+	background-position: center center
+	background-repeat: no-repeat //!important
+	background-attachment: fixed //!important
+
+.backgroundOpacity
+	position: absolute
+	height: 100%
+	width: 100%
+	opacity: 0.7
+	z-index: 1
+	top: 0
+	left: 0
+
+.backgroundDark
+	background: #252525
+
+.counters
+	background-color: #f0f8ff //#bdb76b
+	.counter-number
+		font-size: 40px
+		font-weight: 800
+		padding: 4px 0 10px
+		line-height: 1.2
+		display: block
+	.item
+		color: #fff
+	.container
+		position: relative
+		z-index: 5
+
 .pricing
 	&-item
 		background-color: #e5f13c //#f7f9fa
@@ -288,9 +331,12 @@ h6
 		backface-visibility: hidden
 		&:hover
 			box-shadow: 0 20px 40px rgba(72, 78, 85, 0.15)
-			transform: translateY(-15px)
-	.animated
-		animation-fill-mode: none
+			transform: translate3d(0,-6px,0)
+			.carKey
+				color: blue
+			// transform: translateY(-15px)
+	// .animated
+	// 	animation-fill-mode: none !important
 	ul
 		list-style: none
 		margin: 0
@@ -309,6 +355,13 @@ h6
 
 	&-button
 		margin-top: 40px
+
+	.carKey
+		max-width: 80px
+		background-image: url('../img/icon/car-key.svg')
+		background-size: cover
+		width: 50px
+		height: 70px
 
 
 
