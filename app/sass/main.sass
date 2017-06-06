@@ -137,6 +137,12 @@ h6
 	top: -65px
 	right: 0
 
+.btn:active
+	box-shadow: none
+.btn:active:focus, .btn:focus
+	outline: none
+	
+
 .owl
 	&-bg
 		position: relative
@@ -333,14 +339,20 @@ h6
 			box-shadow: 0 20px 40px rgba(72, 78, 85, 0.15)
 			transform: translate3d(0,-6px,0)
 			.carKey
-				color: blue
-			// transform: translateY(-15px)
-	// .animated
-	// 	animation-fill-mode: none !important
-	ul
-		list-style: none
-		margin: 0
-		padding: 0
+				fill: blue
+				transition: fill 0.7s ease
+		h3
+			font-size: 16px
+			margin-bottom: 17px
+			text-transform: none
+			letter-spacing: 0
+		ul
+			list-style: none
+			margin: 0
+			padding: 0
+			li
+				padding: 10px 0;
+				font-size: 14px;
 	&-price
 		font-size: 50px
 		color: #333
@@ -358,11 +370,11 @@ h6
 
 	.carKey
 		max-width: 80px
-		background-image: url('../img/icon/car-key.svg')
+		// background-image: url('../img/icon/car-key.svg')
 		background-size: cover
 		width: 50px
 		height: 70px
-
+		display: block
 
 
 @import "media"
