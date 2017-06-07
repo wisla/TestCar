@@ -1,5 +1,6 @@
 $(function() {
 
+	//Sliders owlCarousel - START CODE
 	$('#TopSlider').owlCarousel({
 	    navigation: true, // Show next and prev buttons
         slideSpeed: 300,
@@ -9,6 +10,16 @@ $(function() {
         items:1
 	});
 
+	$('#StepSlider').owlCarousel({
+	    navigation: true, // Show next and prev buttons
+        slideSpeed: 300,
+        paginationSpeed: 400,
+        singleItem: true,
+        transitionStyle : "fade",
+        items:1
+	});
+	//Sliders owlCarousel - END CODE
+	
 	//Full Screen Header - START CODE
 	function SetResizeContent() {
 	    var minheight = $(window).height();

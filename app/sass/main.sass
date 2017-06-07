@@ -142,46 +142,46 @@ h6
 .btn:active:focus, .btn:focus
 	outline: none
 	
-
-.owl
-	&-bg
-		position: relative
-		background-position: center center
-		background-repeat: no-repeat
-		background-size: cover
-		overflow: hidden
-		display: block
-		width: 100%
-	&-dots
-		bottom: 30px
-		display: block
-		left: 0
-		position: absolute
-		text-align: center
-		width: 100%
-		z-index: 100
-		.active
+.top-slider
+	.owl
+		&-bg
+			position: relative
+			background-position: center center
+			background-repeat: no-repeat
+			background-size: cover
+			overflow: hidden
+			display: block
+			width: 100%
+		&-dots
+			bottom: 30px
+			display: block
+			left: 0
+			position: absolute
+			text-align: center
+			width: 100%
+			z-index: 100
+			.active
+				span
+					background-image: url('../img/icon/car-yellow-with-tires.png') !important
+					background-size: 98% !important
+					background-repeat: no-repeat !important
+					width: 77px!important
+					height: 36px!important
+					margin: 0 -2px !important
+		&-dot
 			span
-				background-image: url('../img/icon/car-yellow-with-tires.png') !important
-				background-size: 98% !important
+				border: none
+				margin: 0 !important
+				transform: none !important
+				background: none !important
+				background-image: url('../img/icon/tires2.png') !important
+				background-size: contain !important
 				background-repeat: no-repeat !important
-				width: 77px!important
-				height: 36px!important
-				margin: 0 -2px !important
-	&-dot
-		span
-			border: none
-			margin: 0 !important
-			transform: none !important
-			background: none !important
-			background-image: url('../img/icon/tires2.png') !important
-			background-size: contain !important
-			background-repeat: no-repeat !important
-			background-position: center !important
-			width: 52px !important //44
-			border-radius: inherit !important
-			height: 37px !important
-			margin-right: -2px !important
+				background-position: center !important
+				width: 52px !important //44
+				border-radius: inherit !important
+				height: 37px !important
+				margin-right: -2px !important
 
 .underline
 	height: 20px
@@ -376,5 +376,10 @@ h6
 		height: 70px
 		display: block
 
+
+.step
+	&-item
+		img
+			max-width: 400px
 
 @import "media"
