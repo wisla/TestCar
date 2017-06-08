@@ -28,9 +28,12 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrap/js/bootstrap.min.js',
+		'app/libs/modernizr/modernizr.min.js',
 		'app/libs/owl.carousel/owl.carousel.min.js',
 		'app/libs/jquery-appear/jquery.appear.js',
 		'app/libs/countTo/jquery.countTo.js',
+		'app/libs/isotope/jquery.isotope.min.js',
+		'app/libs/imagesloaded/imagesloaded.pkgd.min.js',
 		'app/libs/wow/wow.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
