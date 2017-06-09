@@ -236,7 +236,7 @@ h6
 	font-size: 20px
 	letter-spacing: 2px
 	&-text
-		margin: 5% auto
+		margin: 25px auto
 		float: none
 		h4
 			color: $text-color
@@ -386,5 +386,70 @@ h6
 		text-align: center
 		img
 			max-width: 40%
+
+
+.portfolio
+	&-filter
+		text-align: center
+		height: 55px
+		li
+			display: inline-block
+			float: none
+			margin: 0
+			vertical-align: top
+	.grid-gallery
+		overflow: hidden
+		clear: both
+		float: left
+		width: 100%
+		ul
+			list-style: none
+			padding: 0
+			li
+				float: left
+				width: 25%
+				margin: 0
+	figure
+		margin: 0
+		position: relative
+		transition: opacity 0.2s
+		&:hover
+			.gallery-img
+				background-color: rgba(100,101,95,.73)
+			img
+				transform: scale(1.1,1.1)
+				transition: all .3s ease
+				opacity: 0.15
+			figcaption
+				opacity: 1
+				transition: all .3s ease
+		a
+			position: relative
+			z-index: 2
+			display: block
+			img
+				display: block
+				padding: 25px
+				width: 100%
+				opacity: 1
+				cursor: pointer
+		.gallery-img
+			opacity: 1
+			transition: all 0.3s ease 0s
+			overflow: hidden
+			a
+				position: relative
+				z-index: 2
+				display: block
+	figcaption
+		bottom: 45%
+		position: absolute
+		text-align: center
+		width: 100%
+		opacity: 0
+		h2
+			a
+				color: #e1e161
+				text-decoration: none
 
 @import "media"
