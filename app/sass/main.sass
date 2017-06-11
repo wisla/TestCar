@@ -83,6 +83,11 @@ h6
 	font-weight: 400
 	line-height: 20px
 
+p
+	font-family: 'Open Sans', sans-serif
+	font-size: 14px
+	letter-spacing: 0.02em
+
 .img-responsive
 	display: block
 	max-width: 100%
@@ -287,9 +292,9 @@ h6
 
 .borderline-yellow
 	height: 2px
-	margin: 0 auto
+	margin: 15px auto
 	width: 30px
-	margin: 7% auto
+	// margin: 7% auto
 	background: #e6af2a 
 
 .backgroundFix
@@ -339,7 +344,7 @@ h6
 			box-shadow: 0 20px 40px rgba(72, 78, 85, 0.15)
 			transform: translate3d(0,-6px,0)
 			.carKey
-				fill: blue
+				fill: #8e8f8a
 				transition: fill 0.7s ease
 		h3
 			font-size: 16px
@@ -386,6 +391,7 @@ h6
 		text-align: center
 		img
 			max-width: 40%
+			margin: auto
 
 
 .portfolio
@@ -416,10 +422,17 @@ h6
 		&:hover
 			.gallery-img
 				background-color: rgba(100,101,95,.73)
-			img
-				transform: scale(1.1,1.1)
-				transition: all .3s ease
-				opacity: 0.15
+				a
+					&::before
+						width: 100%
+						background-image: url('../img/icon/tires.png')
+						background-repeat: no-repeat
+						// background-size: contain
+					img
+						opacity: 0.15
+						transition: all .3s ease
+						transform: scale(1.1,1.1)
+						transition: all .3s ease
 			figcaption
 				opacity: 1
 				transition: all .3s ease
@@ -433,23 +446,82 @@ h6
 				width: 100%
 				opacity: 1
 				cursor: pointer
+				max-width: 250px
+				margin: auto
 		.gallery-img
 			opacity: 1
 			transition: all 0.3s ease 0s
 			overflow: hidden
 			a
-				position: relative
-				z-index: 2
-				display: block
+				&::before
+					content: ""
+					height: 30px
+					left: 0
+					opacity: 0.9
+					position: absolute
+					top: 45%
+					width: 0
+					transform: rotate(0deg)
+					transition: all .6s linear
 	figcaption
-		bottom: 45%
+		bottom: 20px
 		position: absolute
 		text-align: center
 		width: 100%
 		opacity: 0
+		p
+			font-size: 16px
+			font-weight: 600
+			color: #000
 		h2
 			a
 				color: #e1e161
 				text-decoration: none
+
+
+.blogs
+	.blog
+		overflow: hidden
+		margin-bottom: 5%
+		&-img
+			overflow: hidden
+			img
+				max-width: 100%
+		&-date
+			color: $text-color
+			font-size: 11px
+			letter-spacing: 2px
+			text-transform: uppercase
+			padding-top: 30px
+		&-title
+			color: #000
+			display: block
+			font-size: 14px
+			letter-spacing: 2px
+			margin: 5px 0 20px
+			text-transform: uppercase
+		&-short-description
+			// width: 75%
+		&-socials
+			.row
+				margin: 0
+				&>div
+					border-left: 1px solid grey
+					text-align: center
+				&:last-child
+					border-right: 1px solid grey
+			a
+				color: #000
+				&:hover
+					color: #8e8f8a
+
+
+.contact
+	&-text
+		background-color:#e5f13c
+		padding: 25px
+		border-top: 2px solid;
+	&-map
+		border-top: 2px solid;
 
 @import "media"
