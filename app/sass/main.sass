@@ -479,42 +479,43 @@ p
 				text-decoration: none
 
 
-.blogs
-	.blog
+.blog
+	overflow: hidden
+	margin-bottom: 5%
+	&-img
 		overflow: hidden
-		margin-bottom: 5%
-		&-img
-			overflow: hidden
-			img
-				max-width: 100%
-		&-date
-			color: $text-color
-			font-size: 11px
-			letter-spacing: 2px
-			text-transform: uppercase
-			padding-top: 30px
-		&-title
+		img
+			max-width: 100%
+	&-date
+		color: $text-color
+		font-size: 11px
+		letter-spacing: 2px
+		text-transform: uppercase
+		padding-top: 30px
+	&-title
+		color: #000
+		display: block
+		font-size: 14px
+		letter-spacing: 2px
+		margin: 5px 0 20px
+		text-transform: uppercase
+	&-short-description
+		// width: 75%
+	&-socials
+		.row
+			margin: 0
+			&>div
+				border-left: 1px solid grey
+				text-align: center
+			&:last-child
+				border-right: 1px solid grey
+		a
 			color: #000
-			display: block
-			font-size: 14px
-			letter-spacing: 2px
-			margin: 5px 0 20px
-			text-transform: uppercase
-		&-short-description
-			// width: 75%
-		&-socials
-			.row
-				margin: 0
-				&>div
-					border-left: 1px solid grey
-					text-align: center
-				&:last-child
-					border-right: 1px solid grey
-			a
-				color: #000
-				&:hover
-					color: #8e8f8a
+			&:hover
+				color: #8e8f8a
 
+.latestNews
+	background-color: #a9aba2
 
 .contact
 	&-text

@@ -11898,37 +11898,40 @@ p {
     color: #e1e161;
     text-decoration: none; }
 
-.blogs .blog {
+.blog {
   overflow: hidden;
   margin-bottom: 5%; }
-  .blogs .blog-img {
+  .blog-img {
     overflow: hidden; }
-    .blogs .blog-img img {
+    .blog-img img {
       max-width: 100%; }
-  .blogs .blog-date {
+  .blog-date {
     color: #7f7f7f;
     font-size: 11px;
     letter-spacing: 2px;
     text-transform: uppercase;
     padding-top: 30px; }
-  .blogs .blog-title {
+  .blog-title {
     color: #000;
     display: block;
     font-size: 14px;
     letter-spacing: 2px;
     margin: 5px 0 20px;
     text-transform: uppercase; }
-  .blogs .blog-socials .row {
+  .blog-socials .row {
     margin: 0; }
-    .blogs .blog-socials .row > div {
+    .blog-socials .row > div {
       border-left: 1px solid grey;
       text-align: center; }
-    .blogs .blog-socials .row:last-child {
+    .blog-socials .row:last-child {
       border-right: 1px solid grey; }
-  .blogs .blog-socials a {
+  .blog-socials a {
     color: #000; }
-    .blogs .blog-socials a:hover {
+    .blog-socials a:hover {
       color: #8e8f8a; }
+
+.latestNews {
+  background-color: #a9aba2; }
 
 .contact-text {
   background-color: #e5f13c;
